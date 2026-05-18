@@ -30,19 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const slideshowImages = {
         web: [
-            'assets/images/web.png',
-            'assets/images/web1.png',
-            'assets/images/web2.png'
+            'assets/web.png',
+            'assets/web1.png',
+            'assets/web2.png'
         ],
         poster: [
-            'assets/images/poster.jpeg',
-            'assets/images/poster1.jpeg',
-            'assets/images/poster2.jpeg',
-            'assets/images/poster3.jpeg',
-            'assets/images/poster4.jpeg',
-            'assets/images/poster5.jpeg',
-            'assets/images/poster6.jpeg',
-            'assets/images/poster7.jpeg'
+            'assets/poster.jpeg',
+            'assets/poster1.jpeg',
+            'assets/poster2.jpeg',
+            'assets/poster3.jpeg',
+            'assets/poster4.jpeg',
+            'assets/poster5.jpeg',
+            'assets/poster6.jpeg',
+            'assets/poster7.jpeg'
         ]
     };
 
