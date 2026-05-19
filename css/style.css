@@ -1,5 +1,7 @@
 /* Custom styles for portfolio */
-
+.hero-title{
+    text-align:center;
+}
 body {
     font-family: 'Inter', sans-serif;
 }
