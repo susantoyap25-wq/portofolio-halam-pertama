@@ -46,23 +46,46 @@
 </head>
 <body class="bg-gray-50 text-gray-900">
     <!-- Hero Section -->
-    <section id="hero" class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row md:items-center gap-8 md:gap-3">
-            <div class="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
-                <img src="assets/gambar.jpeg" alt="Foto Profil" class="w-56 h-56 md:w-64 md:h-64 rounded-full mx-auto object-cover border-4 border-white shadow-lg">
-            </div>
-            <div class="w:full md:w-1/2 text-center md:text-left">
-                <h1 class="hero-title text-4xl md:text-5xl font-bold mb-4 text-center md:text-left">Susanto Yap</h1>
-                <p class="typing-text text-xl mb-6"><span id="typed-quote"></span><span class="typing-cursor"></span></p>
-                <p class="typing-text mb-8"><span id="typed-text"></span><span class="typing-cursor"></span></p>
-                <p class="typing-text mb-8"><span id="typed-description"></span><span class="typing-cursor"></span></p>
-                <div class="flex flex-col md:flex-row justify-center md:justify-start gap-4">
-                <a href="#contact" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 text-center">Hubungi Saya</a>
-                <a href="#projects" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition duration-300 text-center">Lihat Portofolio</a>
-                </div>
+   <!-- Hero Section -->
+<section id="hero" class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
+    <!-- 1. Hapus 'mx-auto', ganti 'w-full', pakai 'justify-center' -->
+    <!-- 2. md:gap-12 artinya jarak antara foto dan teks hanya 48px (bisa diganti md:gap-8 biar makin rapat) -->
+    <div class="w-full px-4 flex flex-col md:flex-row md:items-center justify-center gap-8 md:gap-12">
+        
+        <!-- Kolom Foto -->
+        <!-- w-full di HP, w-1/3 di Laptop. justify-end agar foto agak ke kanan dalam kotak sendiri -->
+        <div class="w-full md:w-1/3 flex justify-center md:justify-end mb-8 md:mb-0">
+            <img src="assets/gambar.jpeg" alt="Foto Profil" class="w-56 h-56 md:w-64 md:h-64 rounded-full object-cover border-4 border-white shadow-lg">
+        </div>
+
+        <!-- Kolom Teks -->
+        <!-- w-1/2 supaya teks punya ruang baca yang cukup -->
+        <div class="w-full md:w-1/2 md:text-left">
+            
+            <!-- Nama: Center di HP, Kiri di Laptop -->
+            <h1 class="hero-title text-4xl md:text-5xl font-bold mb-4 text-center md:text-left">
+                Susanto Yap
+            </h1>
+
+            <!-- Teks Paragraf: Dipaksa Kiri di Laptop -->
+            <p class="typing-text text-xl mb-6 md:text-left">
+                <span id="typed-quote"></span><span class="typing-cursor"></span>
+            </p>
+            <p class="typing-text mb-8 md:text-left">
+                <span id="typed-text"></span><span class="typing-cursor"></span>
+            </p>
+            <p class="typing-text mb-8 md:text-left">
+                <span id="typed-description"></span><span class="typing-cursor"></span>
+            </p>
+
+            <!-- Tombol: Center di HP, Kiri di Laptop -->
+            <div class="flex flex-col md:flex-row justify-center md:justify-start gap-4">
+                <a href="#contact" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration text-center">Hubungi Saya</a>
+                <a href="#projects" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition duration text-center">Lihat Portofolio</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- About Section -->
     <section id="about" data-animate="fade" class="py-20 bg-white">
